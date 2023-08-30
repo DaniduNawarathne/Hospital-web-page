@@ -1,0 +1,30 @@
+body{
+	background-color:#8496B0; 
+}
+h1{
+	font-font-family:Engravers MT;
+	font-size:40px;
+	text-align:center;
+}
+p{
+	font-family:Bookman Old Style;
+	font-size:20px;
+	text-align:justify;
+}
+h2{
+	text-align:left;
+	font-family:Engravers;
+}
+h2{
+	font-size:28px;
+}
+li{
+	font-size:25px;
+}
+div.nbar{
+	word-spacing:3px;
+}
+div.head{
+	font-family:Rockwell Extra Bold;
+	font-size:36px;
+}

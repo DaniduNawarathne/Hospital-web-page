@@ -1,0 +1,187 @@
+<html>
+    <head>
+      <title>Health Care: Official page </title>
+	  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+	  <link rel="stylesheet" href="style.css">
+	  <meta charset="UTF-8">
+      <meta name="viewport" content="width=device-width,initial-scale=1.0">
+    </head>
+	
+    <body>
+	  <div class="head">HEALTH CARE CENTER</div>
+        <div class="nbar" id="my_menu" align="left" style="background-color:#8496B0" >
+           <a href="healthcare.html">HOME</a> |
+           <a href="About us.html">ABOUT US</a> |
+           <a href="service.html">SERVICES</a> |
+           <a href="Doctors.html">DOCTERS</a> |
+           <a href="Contact us.html">CONTACT US</a> 
+
+        </div>
+        <div class="search-container">
+           <form action="Home.html">
+           <input type="text" placeholder="Search.." name="search">
+           <button type="submit"><i class="fa fa-search"></i></button>
+           </form>
+        </div>
+		
+		<div class="eam" >
+		WELOME TO OUR HEALTH CARE CENTER
+		</div>
+		<div class="container" align="center">
+  <div class="mySlides">
+    <div class="numbertext">1 / 6</div>
+    <img src="Home page/img_wide.jpg" style="width:80%">
+  </div>
+
+  <div class="mySlides">
+    <div class="numbertext">2 / 6</div>
+    <img src="Home page/img 1_wide.jpg" style="width:80%">
+  </div>
+
+  <div class="mySlides">
+    <div class="numbertext">3 / 6</div>
+    <img src="Home page/img 2_wide.jpg" style="width:80%">
+  </div>
+    
+  <div class="mySlides">
+    <div class="numbertext">4 / 6</div>
+    <img src="Home page/img 3_wide.jpg" style="width:80%">
+  </div>
+
+  <div class="mySlides">
+    <div class="numbertext">5 / 6</div>
+    <img src="Home page/img 4_wide.jpg" style="width:80%">
+  </div>
+    
+  <div class="mySlides">
+    <div class="numbertext">6 / 6</div>
+    <img src="Home page/img 5_wide.jpg" style="width:80%">
+  </div>
+  <div class="mySlides">
+    <div class="numbertext">6 / 6</div>
+    <img src="Home page/img 6_wide.jpg" style="width:80%">
+  </div>
+    
+  <a class="prev" onclick="plusSlides(-1)">❮</a>
+  <a class="next" onclick="plusSlides(1)">❯</a>
+
+
+
+<script>
+var slideIndex = 1;
+showSlides(slideIndex);
+
+function plusSlides(n) {
+  showSlides(slideIndex += n);
+}
+
+function currentSlide(n) {
+  showSlides(slideIndex = n);
+}
+
+function showSlides(n) {
+  var i;
+  var slides = document.getElementsByClassName("mySlides");
+  var dots = document.getElementsByClassName("demo");
+  var captionText = document.getElementById("caption");
+  if (n > slides.length) {slideIndex = 1}
+  if (n < 1) {slideIndex = slides.length}
+  for (i = 0; i < slides.length; i++) {
+      slides[i].style.display = "none";
+  }
+  for (i = 0; i < dots.length; i++) {
+      dots[i].className = dots[i].className.replace(" active", "");
+  }
+  slides[slideIndex-1].style.display = "block";
+  dots[slideIndex-1].className += " active";
+  captionText.innerHTML = dots[slideIndex-1].alt;
+}
+</script>
+
+
+<h1>Why is Good Health Important?</h1>
+
+	<p><h3>Cells  are the fundamental units of all living organisms. They are made up of a variety of chemical substances. Cells move from place to place. Even if the 
+	cell is not moving, a lot of repairing still goes on within it. Besides this, there are various specialized activities in our body, like the heart pumps blood, the
+	 kidney filters the urine, the brain is constantly thinking, the lungs help in breathing.</br></br>
+
+	This way, there is a lot of interconnectedness between the various organs in our body. For all these activities, our body needs energy and raw material. Food is necessary
+	 for cell and tissue functioning. Therefore, if you are not well, all your bodily activities start getting hampered.</h3></p>
+	 <h1>Importance of Health</h1>
+	 <p>Health is a state of complete physical, mental and social well being. For a healthy life cycle, a person needs to have a balanced diet and has to regularly exercise.
+	 One must also live in a proper shelter, take enough sleep and have good hygiene habits. So, how do we ensure that we are doing all the right things to have a good health?
+	 Let’s spread the awareness for the importance of health:</p>
+	 <ul>
+		<li>The health of all organisms depends on their surrounding or their environment. Our social environment is an important factor in our individual health.</li>
+		<li>Public cleanliness is important for individual health. Therefore, we must ensure that we collect and clear the garbage regularly. We must also contact 
+		an agency who can take the responsibility of clearing the drains. Without this, you could severely affect your health.</li>
+		<li>We need food for health and for food, we will have to earn money by doing work. For this, the opportunity to do work has to be available. Good economic 
+		condition and jobs are, therefore, needed for individual health</li>
+		<li>We need to be happy in order to be truly healthy. If we mistreat each other and are afraid of each other, we cannot be healthy or happy. Social equality
+		and harmony are important for individual health.</li>
+	</ul>
+
+<form method="post" action="">
+	<table border ="0"width ="500"align="center"height="80" style="font-size=72px">
+		<thead>
+		<caption><h2><center>Application for Patients</center></h2></caption>
+        </thead>
+		<tr>
+		<td><label >First Name</label></td>
+		<td><input type="text" name="firstname" size="15"></td>
+		</tr>
+
+		<tr>
+		<td><label>Last Name</label></td>
+		<td><input type="text" name="lastname" size="15"></td>
+		</tr>
+
+		<tr>
+		<td><label>Mobile Number</label></td>
+		<td><input type="tel" pattern="[0-9]{10}" name="telno" size="15"></td>
+		</tr>
+
+		<tr valign="top">
+		<td ><label>Home address</label></td>
+		<td><textarea name="home address" rows="4" cols="18"></textarea></td>
+		</tr>
+
+		<tr>
+		<td><label>Gender</label></td>
+		<td>
+		<input type="radio" id="genderchoise1" name="gender" value="male">
+		<label for ="genderchoise1">Male</label>
+		<input type="radio" id="genderchoise2" name="gender" value="female">
+		<label for ="genderchoise2">Female</label>
+		</td>
+		</tr>
+
+		<tr>
+		<td><label>Appointment date</label></td>
+		<td><input type="date" name="appointment date" ></td>
+		</tr>
+
+		<tr valign="top">
+		<td><label>Name of the Doctor</label></td></br>
+		<td>
+		<select name="text" >
+		    <option disabled selected>Select the doctor</option>
+			<option value="doctors">Dr R.W.Hemantha</option>
+			<option value="doctors">Dr.B.G.N.Rathnasena</option>
+			<option value="doctors">Dr. (Mrs) Sepalika Mendis</option>
+			<option value="doctors">Dr.R.P.Dayasena</option>
+			<option value="doctors">Dr.K.Thirumawalawa</option>
+			<option value="doctors">Dr.T.G.M.Gunasekara</option>
+		</select>
+		</td>
+		</tr>
+
+		<tr>
+		<td><input type="submit" value="Submit"></td>
+		</tr>
+
+		
+	</table>
+</form>
+    </body>
+</html>  
